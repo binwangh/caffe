@@ -5,6 +5,7 @@ Draw a graph of the net architecture.
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 from google.protobuf import text_format
 
+import _init_paths
 import caffe
 import caffe.draw
 from caffe.proto import caffe_pb2

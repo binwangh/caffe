@@ -421,6 +421,11 @@ message LayerParameter {
   optional ThresholdParameter threshold_param = 128;
   optional TileParameter tile_param = 138;
   optional WindowDataParameter window_data_param = 129;
+  optional AxpyParameter axpy_param =151;
+}
+
+// Message that Axpy
+message AxpyParameter {
 }
 
 // Message that stores parameters used to apply transformation

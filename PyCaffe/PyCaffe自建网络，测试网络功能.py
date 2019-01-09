@@ -29,6 +29,7 @@ def createNet(shape, coeff):
     return net
 
 def forward(net, data):
+    # net.blobs[***]: ***代表name 此时先初始化data数据，之后得到处理后的数据。
     net.blobs['data1'].data[...] = data
     net.blobs['data2'].data[...] = data
     net.forward()
